@@ -1,0 +1,27 @@
+<nav>
+  <ul>
+    <div class="left-section">
+      <li>
+        <a [routerLink]="['/home']">Trang chủ</a>
+      </li>
+      <li>
+        <a [routerLink]="['/products']">Sản phẩm</a>
+      </li>
+      <li>
+        <a [routerLink]="['/cart']">Giỏ hàng</a>
+      </li>
+    </div>
+    <div class="right-section">
+      <li id="container">
+        @if (authService.currentUser) {
+          <img [src]="authService.currentUser.photoURL" alt="">
+        }
+      </li>
+      <li>
+        <button (click)="this.authService.login()" id="signin">Log in</button>
+        <button (click)="this.storeService.deleteAllFromCart();this.authService.logout()" id="signout">Log out</button>
+      </li>
+    </div>
+
+  </ul>
+</nav>

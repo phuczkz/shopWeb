@@ -1,0 +1,57 @@
+#card {
+  border: 1px solid black;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px;
+  margin: 20px;
+
+}
+
+#card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#card img {
+  width: 200px;
+  height: 150px;
+  display: block;
+}
+
+#card h2 {
+  color: #dc3545;
+}
+#card p {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+
+#card button {
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#card button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+#card button:hover {
+  background-color: #f96a7d;
+}

@@ -1,0 +1,7 @@
+<h1> Trang sản phẩm</h1>
+<div id="product-container">
+  @for (prod of storeService.products; track $index) {
+    <app-product-card [routerLink]="['/product', prod.id]" [product]="prod"></app-product-card>
+  }
+</div>
+

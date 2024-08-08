@@ -1,0 +1,12 @@
+@for (product of storeService.cart; track $index) {
+  <div class="cart-container">
+    <p>{{ this.product.name }}</p>
+    <p>Giá: {{ this.product.price }} vnđ</p>
+    <p>số lượng: {{ this.product.quantity }}</p>
+    <button (click)="this.storeService.deletefromCart(product)">Xóa</button>
+  </div>
+}
+@if (storeService.cart.length > 0) {
+  <app-totalcost [total]="storeService.total"></app-totalcost>
+}
+

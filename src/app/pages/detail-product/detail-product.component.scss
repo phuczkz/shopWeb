@@ -1,0 +1,82 @@
+h1{
+  color: #dc3545;
+  margin-left: 30px;
+}
+.product-detail {
+  margin: 50px 0 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.product-info {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-info h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.product-info .price {
+  font-size: 24px;
+  color: #e91e63;
+  margin-bottom: 20px;
+}
+
+.product-info .description {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.product-info .quantity {
+  font-size: 20px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.product-info button {
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-info button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.product-info button:not(:disabled):hover {
+  background-color: #f96a7d;
+}
